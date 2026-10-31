@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta http-equiv="Content-Security-Policy"
+    content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; connect-src 'self' https://formspree.io; base-uri 'none'">
+
+  <title>Rizuanto Anindya Abipraya – Portofolio</title>
+
+  <meta name="description" content="Portofolio mahasiswa Teknologi Rekayasa Internet, Politeknik Negeri Lampung.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+
+<header>
+  <nav class="wrap" aria-label="Navigasi utama">
+    <a class="logo" href="#beranda">Rizuanto<i></i></a>
+
+    <ul class="links" id="links">
+      <li><a href="#tentang">Tentang</a></li>
+      <li><a href="#keahlian">Keahlian</a></li>
+      <li><a href="#proyek">Proyek</a></li>
+      <li><a href="#kontak">Kontak</a></li>
+      <li>
+        <button class="icon-btn" id="theme" aria-label="Ganti tema terang/gelap">🌙</button>
+      </li>
+    </ul>
+
+    <button class="icon-btn menu-btn" id="menu" aria-label="Buka menu" aria-expanded="false">☰</button>
+  </nav>
+</header>
+
+<main>
+
+<section class="hero" id="beranda">
+  <div class="wrap">
+    <h1>Rizuanto Anindya Abipraya</h1>
+
+    <p class="role">Saya seorang <b id="typed"></b></p>
+
+    <p class="lead">
+      Mahasiswa Teknologi Rekayasa Internet di Politeknik Negeri Lampung.
+      Saya belajar membangun website, memahami jaringan, dan membuat teknologi yang berguna bagi banyak orang.
+    </p>
+
+    <div class="actions">
+      <a class="btn primary" href="#proyek">Lihat proyek</a>
+      <a class="btn" href="#kontak">Hubungi saya</a>
+    </div>
+
+    <div class="ping">
+      <span></span> Terbuka untuk magang dan kolaborasi
+    </div>
+  </div>
+</section>
+
+<section id="tentang">
+  <div class="wrap">
+    <h2>Tentang saya</h2>
+
+    <div class="about">
+      <div>
+        <p>
+          Halo! Saya mahasiswa semester awal yang sedang mendalami pengembangan web dan jaringan internet.
+          Saya suka mengubah ide menjadi halaman yang bisa dipakai langsung.
+        </p>
+
+        <p>
+          Selain kuliah, saya rajin mengerjakan tugas dan proyek kecil untuk melatih logika pemrograman,
+          desain tampilan, dan kerja sama tim.
+        </p>
+      </div>
+
+      <div class="facts">
+        <dl>
+          <div>
+            <dt>Kampus</dt>
+            <dd>Politeknik Negeri Lampung</dd>
+          </div>
+
+          <div>
+            <dt>Program studi</dt>
+            <dd>Teknologi Rekayasa Internet</dd>
+          </div>
+
+          <div>
+            <dt>Minat</dt>
+            <dd>IT Support, Network Engineering, Electrical Engineering</dd>
+          </div>
+        </dl>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="keahlian">
+  <div class="wrap">
+    <h2>Keahlian</h2>
+
+    <div class="skills" id="skills">
+      <div class="skill">
+        <span>HTML</span>
+        <div class="bar"><i data-level="85"></i></div>
+        <em>85%</em>
+      </div>
+
+      <div class="skill">
+        <span>CSS</span>
+        <div class="bar"><i data-level="75"></i></div>
+        <em>75%</em>
+      </div>
+
+      <div class="skill">
+        <span>JavaScript</span>
+        <div class="bar"><i data-level="60"></i></div>
+        <em>60%</em>
+      </div>
+
+      <div class="skill">
+        <span>Jaringan dasar</span>
+        <div class="bar"><i data-level="65"></i></div>
+        <em>65%</em>
+      </div>
+
+      <div class="skill">
+        <span>Git &amp; GitHub</span>
+        <div class="bar"><i data-level="50"></i></div>
+        <em>50%</em>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="proyek">
+  <div class="wrap">
+    <h2>Proyek</h2>
+
+    <div class="filters" role="group" aria-label="Filter proyek">
+      <button class="chip" data-filter="semua" aria-pressed="true">Semua</button>
+      <button class="chip" data-filter="web" aria-pressed="false">Web</button>
+      <button class="chip" data-filter="jaringan" aria-pressed="false">Jaringan</button>
+      <button class="chip" data-filter="riset" aria-pressed="false">Riset</button>
+    </div>
+
+    <div class="grid">
+
+      <article class="project" data-cat="web">
+        <h3>Website Portofolio</h3>
+        <p>Situs pribadi untuk menampilkan profil, keahlian, dan karya. Responsif dan punya mode gelap.</p>
+        <div class="tags">
+          <span>HTML</span><span>CSS</span><span>JavaScript</span>
+        </div>
+        <a href="#" target="_blank" rel="noopener">Buka proyek</a>
+      </article>
+
+      <article class="project" data-cat="riset">
+        <h3>Makalah Teknologi Digital untuk UMKM</h3>
+        <p>Makalah akademik tentang pemanfaatan teknologi digital untuk meningkatkan daya saing UMKM di Indonesia.</p>
+        <div class="tags">
+          <span>Penulisan</span><span>Analisis</span>
+        </div>
+        <a href="https://drive.google.com/file/d/1p0N0CPpQ8X94nJmCKE6REO9_X7lWrxcW/view?usp=drivesdk" target="_blank" rel="noopener">Baca makalah</a>
+      </article>
+
+      <article class="project" data-cat="jaringan">
+        <h3>Konfigurasi Jaringan Nirkabel</h3>
+        <p>Latihan mengatur perangkat nirkabel dan mencatat hasilnya dalam laporan. Ganti dengan proyek jaringan Anda.</p>
+        <div class="tags">
+          <span>Wi-Fi</span><span>Router</span>
+        </div>
+        <a href="#" target="_blank" rel="noopener">Lihat laporan</a>
+      </article>
+
+      <article class="project" data-cat="web">
+        <h3>Aplikasi Daftar Tugas</h3>
+        <p>Aplikasi kecil untuk mencatat dan mencentang tugas kuliah. Cocok untuk latihan DOM dan penyimpanan lokal.</p>
+        <div class="tags">
+          <span>JavaScript</span><span>LocalStorage</span>
+        </div>
+        <a href="#" target="_blank" rel="noopener">Buka proyek</a>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<section id="kontak">
+  <div class="wrap">
+    <h2>Kontak</h2>
+
+    <form id="form" action="https://formspree.io/f/mrppakvv" method="POST" novalidate>
+
+      <label>Nama
+        <input id="nama" name="nama" required autocomplete="name">
+      </label>
+
+      <label>Email
+        <input id="email" name="email" type="email" required autocomplete="email">
+      </label>
+
+      <label>Pesan
+        <textarea id="pesan" name="pesan" required></textarea>
+      </label>
+
+      <button class="btn primary" type="submit">Kirim pesan</button>
+
+      <p class="status" id="status" role="status"></p>
+
+    </form>
+
+    <div class="social">
+      <a href="https://wa.me/6283179081584" target="_blank" rel="noopener">Whatsapp</a>
+      <a href="https://www.instagram.com/juannindya_/" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://www.tiktok.com/@jgakhwbns2" target="_blank" rel="noopener">Tiktok</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    ©️ <span id="year"></span> Rizuanto Anindya Abipraya.
+    Dibuat dengan HTML, CSS, dan JavaScript.
+  </div>
+</footer>
+
+</body>
+</html>
